@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <span style="color: rgb(255, 72, 0); font-size: 10pt">{{.data}}</span>
+
+    <form action="/send" method="POST">
+
+        <input type="text" name="queue" placeholder="Queue name">
+
+        <input type="txt" name="message" placeholder="message">
+
+        <button > send </button>
+
+      </form>
+
+      <br><br><br>
+
+      <form action="/recivemq" method="GET">
+        <button > Reciver </button>
+    
+</body>
+
+</html>
